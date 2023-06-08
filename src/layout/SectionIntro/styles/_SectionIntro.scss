@@ -1,0 +1,154 @@
+.intro {
+  overflow: hidden;
+
+  &__container {
+    position: relative;
+
+    height: 1078px;
+  }
+
+  &__scene-background-city {
+    position: absolute;
+    top: -90px;
+    left: 28px;
+    z-index: -1;
+
+    width: 2074px;
+    height: 1046px;
+
+    background-image: url("../images/img-intro__background.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+  }
+
+  &__content {
+    max-width: 66%;
+    padding-top: 73px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    display: block;
+    max-width: 500px;
+    margin-bottom: 110px;
+
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  &__feedback {
+    position: relative;
+    z-index: 10;
+
+    max-width: 370px;
+    margin-bottom: 54px;
+  }
+
+  &__manifesto-wrapper {
+    position: relative;
+
+    width: 580px;
+    height: 232px;
+
+    padding-top: 54px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+
+      display: block;
+      width: 50vw;
+
+      background: linear-gradient(88.99deg, rgba(213, 150, 71, 0) 12.86%, rgba(216, 159, 88, 0.612184) 37.74%, #DBA868 51.23%, #F0E088 67.41%, #DAA35F 75.36%, #D59647 85.55%, rgba(154, 104, 48, 0.67) 93.49%, rgba(150, 102, 48, 0) 101.14%, rgba(213, 150, 71, 0) 117.61%, rgba(255, 255, 255, 0) 120.17%);
+
+      content: "";
+    }
+  }
+
+  &__manifesto-text {
+    position: relative;
+
+    z-index: 10;
+
+    display: block;
+    max-width: 470px;
+    padding-top: 20px;
+    padding-bottom: 44px;
+    padding-left: 72px;
+
+    color: $secondary-color;
+    font-weight: 500;
+    line-height: 20px;
+
+    &::before,
+    &::after {
+      position: absolute;
+
+      display: block;
+      width: 44px;
+      height: 38px;
+
+      background-image: url("../images/icon-intro__mark.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: cover;
+
+      content: "";
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+      bottom: 0;
+
+      transform: rotate(-180deg);
+    }
+  }
+
+  &__scene-front-people {
+    position: absolute;
+    right: -78px;
+    bottom: -5px;
+    z-index: 1;
+
+    width: 1221px;
+    height: 891px;
+
+    background-image: url("../images/img-intro__front-people.webp");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+
+    pointer-events: none;
+  }
+
+  &__scene-front-gold {
+    position: absolute;
+    right: -208px;
+    bottom: -103px;
+    z-index: 1;
+
+    width: 2013px;
+    height: 598px;
+
+    background-image: url("../images/img-intro__front-gold.webp");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+
+    mix-blend-mode: color-dodge;
+
+    pointer-events: none;
+  }
+}

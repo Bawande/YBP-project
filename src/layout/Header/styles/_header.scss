@@ -1,0 +1,98 @@
+.header-container {
+  background: $background;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 88px;
+
+  &__logo {
+    width: 361px;
+    height: 64px;
+    margin-right: auto;
+    margin-left: 10px;
+
+    &>img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  &__contacts {
+    margin-right: 25px;
+  }
+
+  &__btn {}
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    position: relative;
+
+    display: block;
+    padding-left: 37px;
+
+    font-weight: 500;
+
+    line-height: 17px;
+
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      display: block;
+      width: 32px;
+      height: 32px;
+
+      background-image: url("../images/sprite-icon__header-icon.png");
+      background-repeat: no-repeat;
+      transform: translateY(-50%);
+
+      content: "";
+    }
+  }
+
+  &__item--email,
+  &__item--address {
+    max-width: 332px;
+
+    font-size: 14px;
+  }
+
+  &__item--email {
+    margin-right: 20px;
+
+    &::before {
+      background-position: 0 0;
+    }
+  }
+
+  &__item--address {
+    margin-right: 30px;
+
+    &::before {
+      background-position: 0 50%;
+    }
+  }
+
+  &__social {
+    margin-right: 25px;
+  }
+
+  &__item--phone {
+    font-size: 20px;
+
+    &::before {
+      background-position: 0 100%;
+    }
+  }
+}
+
+.social {}

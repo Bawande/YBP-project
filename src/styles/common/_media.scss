@@ -1,0 +1,46 @@
+// @media (max-width: 1000px)
+
+@media (max-width: 1000px) {}
+
+// @media (max-width: 768px)
+
+@media (max-width: 768px) {}
+
+// @media (max-width: 640px)
+
+@media (max-width: 640px) {}
+
+// @media (max-width: 540px)
+
+@media (max-width: 540px) {}
+
+// @media (max-width: 480px)
+
+@media (max-width: 480px) {}
+
+// @media (max-width: 415px)
+
+@media (max-width: 415px) {}
+
+// @media (max-width: 320px)
+
+@media (max-width: 320px) {}
+
+// for mobile
+@media (hover: none) {}
+
+// for desktop
+@media (hover: hover) and (pointer: fine) {}
+
+// for Internet Explorer 10+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {}
+
+// for not Internet Explorer 10+
+@media not (-ms-high-contrast: active),
+not (-ms-high-contrast: none) {}
+
+// for desktop and Internet Explorer 10+
+@media (hover: hover) and (pointer: fine),
+screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {}

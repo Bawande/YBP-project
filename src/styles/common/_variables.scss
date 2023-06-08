@@ -1,0 +1,50 @@
+// primary - Устанавливает цвет текста на основной цвет темы
+
+$primary-border-radius: 12px;
+$secondary-border-radius: 18px;
+$gap: 18px;
+
+// --- theme default
+$white: white;
+$black: black;
+
+// --- theme color
+$primary-color: #fff;
+$secondary-color: black;
+
+// --- theme background
+$background: #282828;
+
+// --- accent
+$primary-accent: #ffab08;
+$secondary-accent: #72cc87;
+$gradient-accent: linear-gradient(88.51deg, #d59647 -20.92%, #dba868 2.9%, #f0e088 24.22%, #daa35f 36.76%, #d59647 46.79%, #9a6830 61.83%, #efe188 75.63%, #d59647 93.18%, #bd843e 95.69%, #805426 101.96%, #68421d 104.47%);
+$on-accent: black;
+
+// --- surface
+$surface: #fff;
+$on-surface: #2c2c2c;
+
+// --- border
+$border: #dcdfe6;
+
+// focus
+$focus: lightblue;
+
+// grey
+$grey-80: hsl(0deg 0% 20%);
+$grey-60: hsl(0deg 0% 40%);
+$grey-55: hsl(0deg 0% 45%);
+$grey-40: hsl(0deg 0% 60%);
+$grey-35: hsl(0deg 0% 65%);
+$grey-25: hsl(0deg 0% 75%);
+$grey-20: hsl(0deg 0% 80%);
+$grey-15: hsl(0deg 0% 85%);
+$grey-10: hsl(0deg 0% 90%);
+$grey-5: hsl(0deg 0% 95%);
+
+// messages
+$danger: #ae0a0a;
+$success: #2ecd70;
+$info: #f0ce41;
+$warning: #f1c30f;

@@ -1,0 +1,13 @@
+// --- common styles
+@import "./styles/";
+
+// --- layout styles
+@import "./layout/header/styles/";
+@import "./layout/main/styles/";
+@import "./layout/SectionIntro/styles/";
+@import "./layout/SectionAboutUs/styles/";
+@import "./layout/SectionPartners/styles/";
+@import "./layout/SectionServices/styles/";
+
+// --- component styles
+@import "./components/SocialMedia/styles/";

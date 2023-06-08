@@ -1,0 +1,44 @@
+a.button,
+button.button {
+  cursor: pointer;
+  user-select: none;
+
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  line-height: 1.1;
+  font-size: inherit;
+  color: inherit;
+  text-align: center;
+  text-shadow: none;
+
+  appearance: none;
+
+  -webkit-tap-highlight-color: transparent;
+
+}
+
+a.button,
+a.button:link,
+a.button:visited,
+a.button:hover {
+  text-decoration: none;
+}
+
+button.button {
+  border-spacing: 0;
+
+  padding: 0;
+
+  font-family: inherit;
+
+  background-color: transparent;
+  border: none;
+
+  @media screen and (-ms-high-contrast: active) {
+    border: 2px solid currentcolor;
+  }
+}

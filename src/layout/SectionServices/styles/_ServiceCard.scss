@@ -1,0 +1,115 @@
+.service-card {
+  padding-right: 28px;
+  padding-bottom: 40px;
+  padding-left: 36px;
+
+  &__top {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__serial-number {
+    margin-right: auto;
+
+    font-weight: 700;
+    font-size: 100px;
+    font-family: PlayfairDisplayYBP, serif;
+    font-style: normal;
+    line-height: 1.2;
+
+    opacity: 0.05;
+  }
+
+  &__icon-wrapper {
+    position: relative;
+    top: -5px;
+
+    display: block;
+    width: 105px;
+    height: 88px;
+
+    background-image: url("../images/icon-sprite__service-card.png");
+    background-repeat: no-repeat;
+
+    &.consultation {
+      background-position: 0 0;
+    }
+
+    &.choice {
+      background-position: 0 25%;
+    }
+
+    &.escort {
+      background-position: 0 75%;
+    }
+
+    &.after-sale {
+      background-position: 0 50%;
+    }
+
+    &.manage {
+      background-position: 0 100%;
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      display: block;
+      width: 105px;
+      height: 105px;
+
+      background-color: #ddad62;
+      border-radius: 50px;
+      opacity: 0.3;
+      filter: blur(25px);
+
+      content: "";
+    }
+  }
+
+  &__title {
+
+    margin-bottom: 40px;
+
+    line-height: 38px;
+  }
+
+  &__services-list {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+  }
+
+  &__service-item {
+    position: relative;
+
+    margin-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 40px;
+
+    &::before {
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: block;
+      width: 15px;
+      height: 15px;
+
+      background-image: url("../images/icon__service-card_list-dot.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: cover;
+
+      content: "";
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

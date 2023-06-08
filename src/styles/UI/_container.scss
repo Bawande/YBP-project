@@ -1,0 +1,5 @@
+@import "../mixins/container";
+
+.container {
+  @include container(1620px, 60px);
+}

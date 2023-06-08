@@ -1,0 +1,23 @@
+@import "../../../../node_modules/swiper/swiper";
+
+.partners {
+  &__container {
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__first-list,
+  &__second-list {
+    @extend .swiper-container;
+  }
+
+  &__list {
+    @extend .swiper-wrapper;
+  }
+
+  &__item {
+    @extend .swiper-slide;
+    max-width: 367px;
+  }
+}

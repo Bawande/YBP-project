@@ -1,0 +1,12 @@
+archive/
+build/
+gulp/
+node_modules/
+
+gulpfile.babel.js
+package-lock.json
+
+src/_generated
+src/_temp
+src/_template
+

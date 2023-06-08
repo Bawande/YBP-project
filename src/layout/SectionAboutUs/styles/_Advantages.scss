@@ -1,0 +1,82 @@
+.advantages {
+  padding: 50px 94px;
+  margin-bottom: 100px;
+
+  background-color: $background;
+  border-radius: 100px;
+  box-shadow: 0 50px 50px rgb(12 10 10 / 30%);
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-right: 46px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__icon {
+    display: block;
+    flex-shrink: 0;
+    height: 62px;
+
+    margin-right: 20px;
+
+    background-image: url("../images/icon-sprite__advantages.png");
+    background-repeat: no-repeat;
+
+    &.experience {
+      width: 50px;
+
+      background-position: 0 0;
+    }
+
+    &.investments {
+      width: 73px;
+
+      background-position: 0 33.33%;
+    }
+
+    &.installment {
+      width: 74px;
+
+      background-position: 0 66.66%;
+    }
+
+    &.deals {
+      width: 96px;
+
+      background-position: 0 100%;
+    }
+  }
+
+  &__text {
+    width: auto;
+
+    font-weight: 600;
+    line-height: 20px;
+
+    &.experience {
+      max-width: 186px;
+    }
+
+    &.investments {
+      max-width: 270px;
+    }
+
+    &.installment {
+      max-width: 306px;
+    }
+
+    &.deals {
+      max-width: 165px;
+    }
+  }
+}

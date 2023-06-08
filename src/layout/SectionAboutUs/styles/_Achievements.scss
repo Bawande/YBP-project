@@ -1,0 +1,56 @@
+.achievements {
+  padding: 0 48px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {}
+
+  &__icon {
+    display: block;
+    flex-shrink: 0;
+    height: 90px;
+
+    background-image: url("../images/icon-sprite__achievements.png");
+    background-repeat: no-repeat;
+
+    margin-bottom: 10px;
+
+    &.sum {
+      width: 456px;
+
+      background-position: 0 0;
+    }
+
+    &.agents {
+      width: 200px;
+
+      background-position: 0 33.33%;
+    }
+
+    &.projects {
+      width: 246px;
+
+      background-position: 0 66.66%;
+    }
+
+    &.partners {
+      width: 200px;
+
+      background-position: 0 100%;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    letter-spacing: 0.02em;
+
+    color: rgba(255, 255, 255, 0.7);
+  }
+}

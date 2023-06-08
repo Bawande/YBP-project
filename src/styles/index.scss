@@ -1,0 +1,74 @@
+// --- resets
+@import "./resets/reset";
+@import "./resets/reset-action";
+
+// --- common
+@import "./common/variables";
+@import "./common/fonts";
+
+// --- UI
+@import "./UI/container";
+@import "./UI/btn";
+@import "./UI/title";
+
+// --- body
+body {
+  position: relative;
+
+  min-width: 320px;
+  overflow-x: hidden;
+
+  color: $primary-color;
+
+  font-size: 16px;
+
+  font-family:
+    Montserrat,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Fsira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
+  line-height: 1.3;
+
+  background-color: $background;
+
+  background-image: url("../images/img-background__whater.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 580px;
+  background-size: cover;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.stripes-decor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+
+  display: flex;
+  justify-content: space-between;
+
+  transform: translateX(-50%);
+
+  pointer-events: none;
+
+  // z-index: -1;
+
+  &>i {
+    display: block;
+    width: 1px;
+    height: 100%;
+
+    background-color: $white;
+    opacity: 0.2;
+
+    pointer-events: none;
+  }
+}

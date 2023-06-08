@@ -1,0 +1,76 @@
+@font-face {
+  font-weight: 400;
+  font-family: DihjautiYBP;
+  font-style: normal;
+  src:
+    local("dihjauti-400"),
+    url("../fonts/dihjauti-400.woff2") format("woff2"),
+    url("../fonts/dihjauti-400.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: DihjautiYBP;
+  font-style: normal;
+  src:
+    local("dihjautiS-700"),
+    url("../fonts/dihjautiS-700.woff2") format("woff2"),
+    url("../fonts/dihjautiS-700.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: MontserratYBP;
+  font-style: normal;
+  src:
+    local("montserrat-400"),
+    url("../fonts/montserrat-400.woff2") format("woff2"),
+    url("../fonts/montserrat-400.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: MontserratYBP;
+  font-style: normal;
+  src:
+    local("montserrat-500"),
+    url("../fonts/montserrat-500.woff2") format("woff2"),
+    url("../fonts/montserrat-500.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: MontserratYBP;
+  font-style: normal;
+  src:
+    local("montserrat-600"),
+    url("../fonts/montserrat-600.woff2") format("woff2"),
+    url("../fonts/montserrat-600.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: MontserratYBP;
+  font-style: normal;
+  src:
+    local("montserrat-700"),
+    url("../fonts/montserrat-700.woff2") format("woff2"),
+    url("../fonts/montserrat-700.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: PlayfairDisplayYBP;
+  font-style: normal;
+  src:
+    local("playfair-display-700"),
+    url("../fonts/playfair-display-700.woff2") format("woff2"),
+    url("../fonts/playfair-display-700.woff") format("woff");
+  font-display: swap;
+}
