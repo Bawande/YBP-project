@@ -8,28 +8,34 @@
     </div>
 
     <address class="header__contacts contacts">
-      <a
-        href="mailto:billionairesproperties@yandex.ru"
-        class="contacts__item contacts__item--email"
-      >
-        <span>billionairesproperties@yandex.ru</span>
-      </a>
-
-      <div class="contacts__item contacts__item--address">
-        Aspin Commercial Tower - Sheikh Zayed Road Dubai - United Arab Emirates
-      </div>
-
-      <div class="contacts__social social">
-        @@include('src\components\SocialMedia\SocialMedia.html')
+      <div class="contacts__wrapper">
+        <a
+          href="mailto:billionairesproperties@yandex.ru"
+          class="contacts__item contacts__item--email"
+        >
+          <span>billionairesproperties@yandex.ru</span>
+        </a>
+        <div class="contacts__item contacts__item--address">
+          Aspin Commercial Tower - Sheikh Zayed Road Dubai - United Arab
+          Emirates
+        </div>
+        <div class="contacts__social social">
+          @@include('src\components\SocialMedia\SocialMedia.html')
+        </div>
       </div>
 
       <a href="tel:+971508547841" class="contacts__item contacts__item--phone">
         <span>+971508547841</span>
       </a>
+      <button class="contacts__tablet"></button>
     </address>
 
     <div class="header__callback">
       <button class="btn btn__header"><span>Заказать звонок</span></button>
+    </div>
+
+    <div class="header__mobile-nav mobile-nav">
+      @@include('src\layout\Header\MobileNav.html')
     </div>
   </header>
 </div>

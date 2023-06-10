@@ -1,4 +1,9 @@
 .header-container {
+  position: relative;
+  z-index: 30;
+
+  overflow: hidden;
+
   background: $background;
 }
 
@@ -24,7 +29,7 @@
     margin-right: 25px;
   }
 
-  &__btn {}
+  &__callback {}
 }
 
 .contacts {
@@ -34,13 +39,12 @@
   &__item {
     position: relative;
 
-    display: block;
+    display: inline-block;
     padding-left: 37px;
 
     font-weight: 500;
 
     line-height: 17px;
-
 
     &::before {
       position: absolute;
@@ -57,6 +61,13 @@
 
       content: "";
     }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &__item--email,
@@ -92,6 +103,17 @@
     &::before {
       background-position: 0 100%;
     }
+  }
+
+  &__tablet {
+    display: none;
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../images/icon__header-drop_down.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
   }
 }
 

@@ -2,4 +2,20 @@
 
 .container {
   @include container(1620px, 60px);
+
+  @media (max-width: 1600px) {
+    @include container(1200px, 60px);
+  }
+
+  @media (max-width: 1336px) {
+    @include container(1064px, 60px);
+  }
+
+  @media (max-width: 1024px) {
+    @include container(768px, 40px);
+  }
+
+  @media (max-width: 768px) {
+    @include container(640px, 20px);
+  }
 }

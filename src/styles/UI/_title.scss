@@ -19,6 +19,29 @@ h1.title {
   font-size: 100px;
 
   filter: drop-shadow(2px 2px 0 $black);
+
+  @media (max-width: 1600px) {
+    font-size: 78px;
+    line-height: 1.1;
+  }
+
+  @media (max-width: 1336px) {
+    font-size: 68px;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 60px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 50px;
+
+    filter: drop-shadow(1px 1px 0 $black);
+  }
+
+  @media (max-width: 414px) {
+    font-size: 34px;
+  }
 }
 
 h2.title {
