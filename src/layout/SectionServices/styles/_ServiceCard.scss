@@ -28,7 +28,8 @@
     width: 105px;
     height: 88px;
 
-    background-image: url("../images/icon-sprite__service-card.png");
+    // background-image: url("../images/icon-sprite__service-card.png");
+    @include bg-webp("../images/icon-sprite__service-card");
     background-repeat: no-repeat;
 
     &.consultation {
@@ -74,6 +75,7 @@
 
     margin-bottom: 40px;
 
+    font-size: 24px;
     line-height: 38px;
   }
 
@@ -100,7 +102,9 @@
       width: 15px;
       height: 15px;
 
-      background-image: url("../images/icon__service-card_list-dot.png");
+      // background-image: url("../images/icon__service-card_list-dot.png");
+      @include bg-webp("../images/icon__service-card_list-dot");
+
       background-repeat: no-repeat;
       background-position: 0 0;
       background-size: cover;

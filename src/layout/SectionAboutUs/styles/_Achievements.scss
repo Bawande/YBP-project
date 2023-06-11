@@ -14,43 +14,45 @@
     flex-shrink: 0;
     height: 90px;
 
-    background-image: url("../images/icon-sprite__achievements.png");
+    margin-bottom: 10px;
+
     background-repeat: no-repeat;
 
-    margin-bottom: 10px;
+    background-position: center center;
+    background-size: contain;
 
     &.sum {
       width: 456px;
 
-      background-position: 0 0;
+      @include bg-webp("../images/icon-achievements__sum_l");
     }
 
     &.agents {
       width: 200px;
 
-      background-position: 0 33.33%;
+      @include bg-webp("../images/icon-achievements__agents_l");
     }
 
     &.projects {
       width: 246px;
 
-      background-position: 0 66.66%;
+      @include bg-webp("../images/icon-achievements__projects_l");
     }
 
     &.partners {
       width: 200px;
 
-      background-position: 0 100%;
+      @include bg-webp("../images/icon-achievements__partners_l");
     }
   }
 
   &__text {
+
+    color: rgb(255 255 255 / 70%);
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
 
     letter-spacing: 0.02em;
-
-    color: rgba(255, 255, 255, 0.7);
   }
 }

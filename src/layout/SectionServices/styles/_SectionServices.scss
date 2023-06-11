@@ -1,6 +1,35 @@
 .services {
+  position: relative;
+
   padding-top: 100px;
   padding-bottom: 100px;
+  overflow: hidden;
+
+  @media (max-width: 1440px) {
+    padding-top: 50px;
+  }
+
+  @media (max-width: 534px) {
+    padding-top: 40px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    background-color: $background;
+    opacity: 0.6;
+
+    filter: blur(10px);
+
+    content: "";
+  }
 
   &__cards-list {
     display: flex;
@@ -8,12 +37,66 @@
     justify-content: start;
 
     border-bottom: 1px solid rgb(255 255 255 / 10%);
+
+    @media (max-width: 1024px) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 534px) {
+      flex-wrap: nowrap;
+
+      border: none;
+    }
   }
 
   &__card-item {
+    position: relative;
+
     width: 33.333%;
     height: auto;
 
     border-top: 1px solid rgb(255 255 255 / 10%);
+
+    @media (max-width: 1024px) {
+      width: 50%;
+    }
+
+    @media (max-width: 534px) {
+      width: 100%;
+
+      border: none;
+
+      opacity: 0.6;
+      filter: blur(3px);
+
+      &.swiper-slide-active {
+        opacity: 1;
+        filter: none;
+      }
+
+      &::before,
+      &::after {
+        position: absolute;
+        left: 50%;
+
+        display: block;
+        width: 100vw;
+        height: 1px;
+
+        background-color: rgb(255 255 255 / 10%);
+
+        transform: translateX(-50%);
+
+        content: "";
+      }
+
+      &::before {
+        top: 0;
+      }
+
+      &::after {
+        bottom: 0;
+      }
+    }
   }
 }

@@ -2,6 +2,12 @@
 @import "./resets/reset";
 @import "./resets/reset-action";
 
+// --- libs
+@import "../../node_modules/swiper/swiper";
+
+// --- mixins
+@import "./mixins/bg-webp";
+
 // --- common
 @import "./common/variables";
 @import "./common/fonts";
@@ -79,6 +85,16 @@ body {
   }
 
   @media (max-width: 768px) {
+    &>i:nth-child(2) {
+      $topOffset: 920px;
+      position: relative;
+      top: $topOffset;
+
+      height: calc(100% - #{$topOffset});
+    }
+  }
+
+  @media (max-width: 534px) {
     &>i:nth-child(2) {
       display: none;
     }

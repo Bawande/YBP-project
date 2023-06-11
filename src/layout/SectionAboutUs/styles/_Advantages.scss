@@ -29,7 +29,9 @@
 
     margin-right: 20px;
 
-    background-image: url("../images/icon-sprite__advantages.png");
+    // background-image: url("../images/icon-sprite__advantages.png");
+    @include bg-webp("../images/icon-sprite__advantages");
+
     background-repeat: no-repeat;
 
     &.experience {
@@ -51,7 +53,7 @@
     }
 
     &.deals {
-      width: 96px;
+      width: 85px;
 
       background-position: 0 100%;
     }

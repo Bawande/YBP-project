@@ -1,1 +1,3 @@
-import './TemplateName';
+// import './SectionAboutUs';
+// import './Achievements';
+import './Advantages';

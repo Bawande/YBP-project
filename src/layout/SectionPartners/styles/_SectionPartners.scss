@@ -1,10 +1,29 @@
-@import "../../../../node_modules/swiper/swiper";
-
 .partners {
   &__container {
     max-width: 1920px;
     margin-right: auto;
     margin-left: auto;
+    padding-top: 100px;
+
+    @media (max-width: 1536px) {
+      padding-top: 60px;
+    }
+
+    @media (max-width: 1440px) {
+      padding-top: 50px;
+    }
+
+    @media (max-width: 1024px) {
+      padding-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      padding-top: 26px;
+    }
+
+    @media (max-width: 414px) {
+      padding-top: 16px;
+    }
   }
 
   &__first-list,
@@ -19,5 +38,15 @@
   &__item {
     @extend .swiper-slide;
     max-width: 367px;
+
+    @media (max-width: 1440px) {
+      max-width: 300px;
+    }
+
+    &>img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
   }
 }

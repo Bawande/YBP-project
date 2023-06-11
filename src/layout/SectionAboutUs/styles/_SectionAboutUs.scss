@@ -1,5 +1,42 @@
 .about-us {
   position: relative;
-  top: -106px;
-  z-index: 10;
+  top: -200px;
+  z-index: 30;
+
+  margin-bottom: -200px;
+
+  overflow: hidden;
+
+  &__container {}
+
+  @media (max-width: 1600px) {
+    top: -160px;
+    margin-bottom: -160px;
+  }
+
+  @media (max-width: 1180px) {
+    top: -140px;
+    margin-bottom: -140px;
+  }
+
+  @media (max-width: 1024px) {
+    top: -160px;
+    margin-bottom: -160px;
+  }
+
+  @media (max-width: 414px) {
+    top: -142px;
+    margin-bottom: -142px;
+
+    // overflow: hidden;
+    &__container {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  @media (max-width: 375px) {
+    top: -136px;
+    margin-bottom: -136px;
+  }
 }

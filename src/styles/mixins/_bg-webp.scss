@@ -1,0 +1,7 @@
+@mixin bg-webp ($url, $type: ".png") {
+  background-image: url('#{$url}#{$type}');
+
+  @supports (gap: 1px) {
+    background-image: url('#{$url}.webp');
+  }
+}

@@ -43,7 +43,9 @@
         width: 122px;
         height: 123px;
 
-        background-image: url("../images/img-intro__btn-palm_075.png");
+        // background-image: url("../images/img-intro__btn-palm_075.png");
+        @include bg-webp("../images/img-intro__btn-palm_075");
+
       }
     }
 
@@ -54,6 +56,7 @@
 
       &::before {
         width: 200%;
+        right: -10%;
       }
     }
 
@@ -81,7 +84,9 @@
 
 @media (max-width: 1440px) {
   .intro {
-    &__container {}
+    &__container {
+      height: 720px;
+    }
 
     &__content {
       padding-top: 36px;
@@ -152,8 +157,6 @@
       padding-top: 18px;
     }
 
-    &__title {}
-
     &__subtitle {
       max-width: 460px;
       margin-bottom: 66px;
@@ -169,6 +172,10 @@
 
     &__manifesto-wrapper {
       height: 148px;
+
+      &::before {
+        right: -5%;
+      }
     }
 
     &__manifesto-text {
@@ -182,7 +189,9 @@
         width: 34px;
         height: 29px;
 
-        background-image: url("../images/icon-intro__mark_m.png");
+        // background-image: url("../images/icon-intro__mark_m.png");
+        @include bg-webp("../images/icon-intro__mark_m");
+
       }
     }
 
@@ -207,8 +216,6 @@
       height: 590px;
     }
 
-    &__scene-background-city {}
-
     &__content {
       padding-top: 10px;
     }
@@ -232,7 +239,15 @@
         width: 82px;
         height: 82px;
 
-        background-image: url("../images/img-intro__btn-palm_05.png");
+        // background-image: url("../images/img-intro__btn-palm_05.png");
+        @include bg-webp("../images/img-intro__btn-palm_05");
+
+      }
+    }
+
+    &__manifesto-wrapper {
+      &::before {
+        right: -0;
       }
     }
 
@@ -293,7 +308,9 @@
       width: 566px;
       height: 531px;
 
-      background-image: url("../images/img-intro__front-people_m.webp");
+      // background-image: url("../images/img-intro__front-people_m.webp");
+      @include bg-webp("../images/img-intro__front-people_m");
+
     }
 
     &__scene-front-gold {
@@ -302,7 +319,9 @@
       width: 1023px;
       height: 304px;
 
-      background-image: url("../images/img-intro__front-gold_mobile.webp");
+      // background-image: url("../images/img-intro__front-gold_mobile.webp");
+      @include bg-webp("../images/img-intro__front-gold_mobile");
+
     }
   }
 }
@@ -371,7 +390,9 @@
       width: 850px;
       height: 764px;
 
-      background-image: url("../images/img-intro__background_mobile.webp");
+      // background-image: url("../images/img-intro__background_mobile.webp");
+      @include bg-webp("../images/img-intro__background_mobile");
+
     }
 
     &__scene-front-people {
@@ -452,7 +473,9 @@
       width: 422px;
       height: 764px;
 
-      background-image: url("../images/img-intro__background_s-mobile.webp");
+      // background-image: url("../images/img-intro__background_s-mobile.webp");
+      @include bg-webp("../images/img-intro__background_s-mobile");
+
     }
 
     &__scene-front-people {
@@ -466,7 +489,8 @@
       width: 559px;
       height: 166px;
 
-      background-image: url("../images/img-intro__front-gold_s-mobile.webp");
+      // background-image: url("../images/img-intro__front-gold_s-mobile.webp");
+      @include bg-webp("../images/img-intro__front-gold_s-mobile");
     }
   }
 }

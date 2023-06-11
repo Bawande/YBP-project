@@ -1,0 +1,147 @@
+@media (max-width: 1600px) {
+  .achievements {
+
+    &__icon {
+      height: 60px;
+
+      &.sum {
+        width: 316px;
+
+        @include bg-webp("../images/icon-achievements__sum_m");
+      }
+
+      &.agents {
+        width: 138px;
+
+        @include bg-webp("../images/icon-achievements__agents_m");
+      }
+
+      &.projects {
+        width: 170px;
+
+        @include bg-webp("../images/icon-achievements__projects_m");
+      }
+
+      &.partners {
+        width: 138px;
+
+        @include bg-webp("../images/icon-achievements__partners_m");
+      }
+    }
+
+  }
+}
+
+// @media (max-width: 1300px)
+
+@media (max-width: 1336px) {
+  .achievements {
+    padding: 0 6px;
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .achievements {
+
+    &__list {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    &__item {
+      width: calc(50% - 10px);
+    }
+
+    &__card-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__text {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .achievements {
+
+    &__list {
+      gap: 10px;
+    }
+
+    &__item {
+      width: calc(50% - 5px);
+    }
+
+    &__icon {
+      height: 50px;
+      width: 100%;
+
+      &.sum {
+        @include bg-webp("../images/icon-achievements__sum_s");
+      }
+
+      &.agents {
+        @include bg-webp("../images/icon-achievements__agents_s");
+      }
+
+      &.projects {
+        @include bg-webp("../images/icon-achievements__projects_s");
+      }
+
+      &.partners {
+        @include bg-webp("../images/icon-achievements__partners_s");
+      }
+    }
+
+    &__card-wrapper {}
+
+    &__text {}
+  }
+}
+
+@media (max-width: 534px) {
+  .achievements {
+
+
+    &__icon {
+      height: 46px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .achievements {
+
+    &__list {
+      display: block;
+      gap: 0;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      justify-content: start;
+    }
+
+    &__item {
+      width: 100%;
+    }
+
+    &__icon {
+      min-width: 229px;
+
+    }
+
+    &__text {
+      margin-bottom: 26px;
+    }
+  }
+}
