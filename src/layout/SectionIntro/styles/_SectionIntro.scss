@@ -80,6 +80,8 @@
     margin-bottom: 54px;
 
     &>.btn::after {
+      z-index: 10;
+
       position: absolute;
       top: -112px;
       right: -60px;

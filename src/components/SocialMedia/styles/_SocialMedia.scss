@@ -17,19 +17,31 @@
     display: block;
     width: 33px;
     height: 33px;
+    // border-radius: 50%;
 
-    background-image: url("../images/sprite-icon__social-media.png");
+    background-image: url("../images/sprite-icon__social-media_l.png");
     background-repeat: no-repeat;
+    background-size: auto auto;
+
+    transition: filter 0.3s ease;
 
     &.instagram {
       background-position: 0 0;
     }
 
     &.whatsapp {
-      background-position: 0 50%;
+      background-position: 0 25%;
     }
 
     &.telegram {
+      background-position: 0 50%;
+    }
+
+    &.facebook {
+      background-position: 0 75%;
+    }
+
+    &.youtube {
       background-position: 0 100%;
     }
   }
@@ -39,6 +51,14 @@
   @media (max-width: 1536px) {
     &__item {
       margin-right: 10px;
+    }
+  }
+
+  // for desktop hover effect
+  @media (hover: hover) and (pointer: fine) {
+    &__icon:hover {
+      background-position-x: 100%;
+      filter: $hover-shadow;
     }
   }
 }

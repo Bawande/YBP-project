@@ -1,5 +1,9 @@
+$linear-gradient: linear-gradient(63.57deg, #d59647 13.01%, #dba868 29.2%, #f0e088 43.69%, #daa35f 52.22%, #d59647 59.04%, #efe188 78.65%, #d59647 98.25%);
+
 .service-card-feedback {
+
   position: relative;
+  z-index: 0;
 
   display: flex;
   align-items: flex-end;
@@ -8,8 +12,36 @@
 
   padding: 30px 45px 50px 50px;
 
-  background-image: linear-gradient(63.57deg, #d59647 13.01%, #dba868 29.2%, #f0e088 43.69%, #daa35f 52.22%, #d59647 59.04%, #efe188 78.65%, #d59647 98.25%);
+  background-color: $surface;
+
   cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    display: block;
+
+    background-image: $linear-gradient;
+    opacity: 1;
+
+    transition: opacity 0.3s ease;
+
+    content: "";
+  }
+
+  // for desktop hover effect
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      &::before {
+        opacity: 0;
+      }
+    }
+  }
 
   @media (max-width: 1280px) {
     min-height: 380px;
@@ -22,6 +54,8 @@
   }
 
   &__content {
+    z-index: 4;
+
     width: 100%;
 
     &::after {
@@ -67,7 +101,6 @@
   }
 
   &__text {
-
     color: $secondary-color;
     font-weight: 700;
     font-size: 24px;
@@ -88,15 +121,45 @@
   }
 
   &__trigger {
+    position: relative;
+    z-index: 3;
+
     display: block;
     flex-shrink: 0;
     width: 60px;
     height: 60px;
 
-    background-image: url("../images/icon__service-card-feedback__arrow.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: contain;
+    &::after,
+    &::before {
+      position: absolute;
+
+      display: block;
+
+      content: "";
+    }
+
+    &::after {
+      width: 100%;
+      height: 100%;
+
+      background-image: url("../images/icon__service-card-feedback__arrow.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain;
+    }
+
+    &::before {
+      top: -50%;
+      right: -50%;
+      bottom: -50%;
+      left: -50%;
+
+      background-image: $linear-gradient;
+      border-radius: 50%;
+      opacity: 0;
+
+      transition: opacity 0.5s ease;
+    }
 
     @media (max-width: 1440px) {
       width: 40px;
@@ -106,6 +169,15 @@
     @media (max-width: 414px) {
       width: 34px;
       height: 34px;
+    }
+  }
+
+  // for desktop hover effect
+  @media (hover: hover) and (pointer: fine) {
+    &:hover &__trigger {
+      &::before {
+        opacity: 1;
+      }
     }
   }
 }

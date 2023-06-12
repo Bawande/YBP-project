@@ -1,4 +1,6 @@
 .btn {
+  z-index: 1;
+
   display: flex;
   align-items: center;
   width: 100%;
@@ -9,8 +11,13 @@
 
   white-space: nowrap;
 
-  background-image: $gradient-accent;
+  background-color: $primary-accent;
+
   border-radius: 50px;
+
+  transition: background 0.3s ease;
+
+
 
   &__header {
     padding: 11px 25px;
@@ -66,6 +73,44 @@
       padding: 14px 20px;
 
       font-size: 13px;
+    }
+  }
+
+  &__header>*,
+  &__main>* {
+    z-index: 3;
+  }
+
+  &__header::before,
+  &__main::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    z-index: 0;
+    z-index: 2;
+
+    display: block;
+
+    background-image: $gradient-accent;
+
+    border-radius: inherit;
+
+    transition: opacity 0.3s ease;
+
+    content: "";
+  }
+
+  // for desktop hover effect
+  @media (hover: hover) and (pointer: fine) {
+
+    &__header:hover,
+    &__main:hover {
+      &::before {
+        opacity: 0;
+      }
     }
   }
 }

@@ -46,6 +46,7 @@
 
     line-height: 17px;
 
+
     &::before {
       position: absolute;
       top: 50%;
@@ -58,6 +59,8 @@
       background-image: url("../images/sprite-icon__header-icon.png");
       background-repeat: no-repeat;
       transform: translateY(-50%);
+
+      transition: filter 0.3s ease;
 
       content: "";
     }

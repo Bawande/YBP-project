@@ -1,3 +1,14 @@
+// for desktop hover effect
+@media (hover: hover) and (pointer: fine) {
+  .contacts {
+    &__item:hover {
+      &::before {
+        filter: $hover-shadow;
+      }
+    }
+  }
+}
+
 // @media (max-width: 1600px)
 
 @media (max-width: 1600px) {

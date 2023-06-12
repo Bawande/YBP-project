@@ -11,8 +11,8 @@
 
   @media (max-width: 534px) {
     padding-top: 40px;
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 
   &::before {
@@ -99,4 +99,36 @@
       }
     }
   }
+
+  // for desktop hover effect
+  @media (hover: hover) and (pointer: fine) {
+    &__card-item {
+      &::before {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+        z-index: -1;
+
+        display: block;
+
+        background: $grey-80;
+        opacity: 0;
+        filter: blur(10px);
+
+        transition: opacity 0.3s ease;
+
+        content: "";
+      }
+    }
+
+    &__card-item:hover {
+      &::before {
+        opacity: 0.8;
+      }
+    }
+  }
 }
+
+.services {}
