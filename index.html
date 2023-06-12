@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Your Billionaires Properties</title>
+
+  <link rel="shortcut icon" href="ico/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="./styles/styles.min.css" />
+
+  <link
+    rel="preload"
+    href="  ./fonts/dihjauti-400.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="  ./fonts/dihjautiS-700.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="  ./fonts/montserrat-400.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="  ./fonts/montserrat-500.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="  ./fonts/montserrat-600.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="  ./fonts/montserrat-700.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="  ./fonts/playfair-display-700.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="./favicon/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./favicon/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href=".favicon/favicon-16x16.png"
+  />
+  <link rel="manifest" href="./favicon/site.webmanifest" />
+</head>
+
+  <body>
+    <div class="header-container">
+  <header class="container header">
+    <div class="header__logo">
+      <img
+        src="./images/logo-header-ybp.png"
+        alt="Your Billionaires Properties"
+      />
+    </div>
+
+    <address class="header__contacts contacts">
+      <div class="contacts__wrapper">
+        <a
+          href="mailto:billionairesproperties@yandex.ru"
+          class="contacts__item contacts__item--email"
+        >
+          <span>billionairesproperties@yandex.ru</span>
+        </a>
+        <div class="contacts__item contacts__item--address">
+          Aspin Commercial Tower&#160;&#8212; Sheikh Zayed Road Dubai&#160;&#8212; United Arab
+          Emirates
+        </div>
+        <div class="contacts__social social">
+          <ul class="social__list">
+  <li class="social__item">
+    <a href="#" class="social__icon instagram"></a>
+  </li>
+  <li class="social__item">
+    <a href="#" class="social__icon whatsapp"></a>
+  </li>
+  <li class="social__item">
+    <a href="#" class="social__icon telegram"></a>
+  </li>
+</ul>
+
+        </div>
+      </div>
+
+      <a href="tel:+971508547841" class="contacts__item contacts__item--phone">
+        <span>+971508547841</span>
+      </a>
+      <button class="contacts__tablet"></button>
+    </address>
+
+    <div class="header__callback">
+      <button class="btn btn__header" data-modal-open="id-modal-callback">
+        <span>Заказать звонок</span>
+      </button>
+    </div>
+
+    <div class="header__mobile-nav mobile-nav">
+      <div class="mobile-nav__overlay">
+  <button class="mobile-nav__toggler btn-toggler">
+    <span class="btn-toggler__icon"></span>
+  </button>
+  <nav class="mobile-nav__list-wrapper">
+    <ul class="mobile-nav__list">
+      <li class="mobile-nav__item">
+        <a
+          href="tel:+971508547841"
+          class="contacts__item contacts__item--phone"
+        >
+          <span>+971508547841</span>
+        </a>
+      </li>
+      <li class="mobile-nav__item">
+        <a
+          href="mailto:billionairesproperties@yandex.ru"
+          class="contacts__item contacts__item--email"
+        >
+          <span>billionairesproperties@yandex.ru</span>
+        </a>
+      </li>
+      <li class="mobile-nav__item">
+        <div class="contacts__item contacts__item--address">
+          Aspin Commercial Tower&#160;&#8212; Sheikh Zayed Road Dubai&#160;&#8212; United Arab
+          Emirates
+        </div>
+      </li>
+      <li class="mobile-nav__item">
+        <div class="contacts__social social">
+          <ul class="social__list">
+  <li class="social__item">
+    <a href="#" class="social__icon instagram"></a>
+  </li>
+  <li class="social__item">
+    <a href="#" class="social__icon whatsapp"></a>
+  </li>
+  <li class="social__item">
+    <a href="#" class="social__icon telegram"></a>
+  </li>
+</ul>
+
+        </div>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+    </div>
+  </header>
+</div>
+
+    <main class="main main__container">
+  <section class="intro">
+  <div class="intro__container container">
+    <div class="intro__scene-background-city">
+      <i></i>
+    </div>
+
+    <div class="intro__content">
+      <h1 class="intro__title title">
+        <span>VIP</span> агентство недвижимости
+      </h1>
+      <p class="intro__subtitle">
+        с&#160;реализацией проектов бизнес, премиум и&#160;де-люкс-класса в&#160;100+ ЖК
+        Эмирата
+      </p>
+      <div class="intro__feedback">
+        <button class="btn btn__main" data-modal-open="id-modal-callback">
+          <span>получить консультацию</span>
+        </button>
+      </div>
+      <div class="intro__manifesto-wrapper">
+        <p class="intro__manifesto-text">
+          Мы&#160;&#8212; перспективное агентство недвижимости полного цикла, с&#160;которым вы
+          полюбите Дубай и&#160;узнаете, что такое высокодоходные инвестиции&#187;
+        </p>
+      </div>
+    </div>
+
+    <div class="intro__scene-front-people">
+      <i></i>
+    </div>
+
+    <div class="intro__scene-front-gold">
+      <i></i>
+    </div>
+  </div>
+</section>
+
+  <section class="about-us">
+  <div class="container about-us__container">
+    <div class="advantages">
+  <ul class="advantages__list">
+    <li class="advantages__item">
+      <i class="advantages__icon experience"></i>
+      <span class="advantages__text experience"
+        >25 лет опыта в&#160;сфере недвижимости</span
+      >
+    </li>
+
+    <li class="advantages__item">
+      <i class="advantages__icon investments"></i>
+      <span class="advantages__text investments">
+        Поможем зарабатывать профессиональным и&#160;частным инвесторам 8-20% годовых
+      </span>
+    </li>
+
+    <li class="advantages__item">
+      <i class="advantages__icon installment"></i>
+      <span class="advantages__text installment">
+        Предложим рассрочку под 0%, составим удобную схему платежей
+      </span>
+    </li>
+
+    <li class="advantages__item">
+      <i class="advantages__icon deals"></i>
+      <span class="advantages__text deals">Закрываем сделки за&#160;1-2 дня</span>
+    </li>
+  </ul>
+</div>
+
+    <div class="achievements">
+  <ul class="achievements__list">
+    <li class="achievements__item">
+      <div class="achievements__card-wrapper">
+        <i class="achievements__icon sum"></i>
+        <span class="achievements__text">сумма сделок</span>
+      </div>
+    </li>
+
+    <li class="achievements__item">
+      <div class="achievements__card-wrapper">
+        <i class="achievements__icon agents"></i>
+        <span class="achievements__text">агентов в&#160;компании</span>
+      </div>
+    </li>
+
+    <li class="achievements__item">
+      <div class="achievements__card-wrapper">
+        <i class="achievements__icon projects"></i>
+        <span class="achievements__text">успешных проектов</span>
+      </div>
+    </li>
+
+    <li class="achievements__item">
+      <div class="achievements__card-wrapper">
+        <i class="achievements__icon partners"></i>
+        <span class="achievements__text">партнеров застройщиков</span>
+      </div>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</section>
+
+  <section class="partners partners__container">
+  <div class="partners__first-list">
+    <ul class="partners__list">
+      <li class="partners__item">
+        <img src="./images/img-artners__firt-1.svg" alt="Logo AZIZI" />
+      </li>
+
+      <li class="partners__item">
+        <img src="./images/img-artners__firt-2.svg" alt="Logo EMAAR" />
+      </li>
+
+      <li class="partners__item">
+        <img src="./images/img-artners__firt-3.svg" alt="Logo DAMAC" />
+      </li>
+
+      <li class="partners__item">
+        <img src="./images/img-artners__firt-4.svg" alt="Logo NAKHEL" />
+      </li>
+
+      <li class="partners__item">
+        <img src="./images/img-artners__firt-5.svg" alt="Logo SOBHA" />
+      </li>
+    </ul>
+  </div>
+
+  <div class="partners__second-list">
+    <ul class="partners__list">
+      <li class="partners__item">
+        <img src="./images/img-artners__second-1.svg" alt="Logo AZIZI" />
+      </li>
+
+      <li class="partners__item">
+        <img src="./images/img-artners__second-2.svg" alt="Logo EMAAR" />
+      </li>
+
+      <li class="partners__item">
+        <img src="./images/img-artners__second-3.svg" alt="Logo DAMAC" />
+      </li>
+
+      <li class="partners__item">
+        <img src="./images/img-artners__second-4.svg" alt="Logo NAKHEL" />
+      </li>
+
+      <li class="partners__item">
+        <img src="./images/img-artners__second-5.svg" alt="Logo SOBHA" />
+      </li>
+    </ul>
+  </div>
+</section>
+
+  <section class="services container">
+  <div class="services__wrapper">
+    <ul class="services__cards-list">
+      <li class="services__card-item">
+        <article class="service-card">
+  <div class="service-card__top">
+    <div class="service-card__serial-number">01</div>
+    <i class="service-card__icon-wrapper consultation"></i>
+  </div>
+  <h4 class="service-card__title title">КОНСУЛЬТИРУЕМ</h4>
+  <ul class="service-card__services-list">
+
+        <li class="service-card__service-item">
+      <span>Выбор стратегии инвестирования</span>
+    </li>
+
+        <li class="service-card__service-item">
+      <span>Покупка, Продажа, Аренда недвижимости</span>
+    </li>
+
+        <li class="service-card__service-item">
+      <span>Получение резидентства, ВНЖ</span>
+    </li>
+
+        <li class="service-card__service-item">
+      <span>Частные или профессиональные инвесторы</span>
+    </li>
+
+      </ul>
+</article>
+
+      </li>
+      <li class="services__card-item">
+        <article class="service-card">
+  <div class="service-card__top">
+    <div class="service-card__serial-number">02</div>
+    <i class="service-card__icon-wrapper choice"></i>
+  </div>
+  <h4 class="service-card__title title">ВЫБИРАЕМ И&#160;ОСМАТРИВАЕМ</h4>
+  <ul class="service-card__services-list">
+
+        <li class="service-card__service-item">
+      <span>Поиск и&#160;подбор по&#160;предложенным параметрам</span>
+    </li>
+
+        <li class="service-card__service-item">
+      <span>Переговоры, предварительные и&#160;совместные для закрытия сделки</span>
+    </li>
+
+        <li class="service-card__service-item">
+      <span>Экспертное сопровождение, консультации на&#160;всех этапах</span>
+    </li>
+
+      </ul>
+</article>
+
+      </li>
+      <li class="services__card-item">
+        <article class="service-card">
+  <div class="service-card__top">
+    <div class="service-card__serial-number">03</div>
+    <i class="service-card__icon-wrapper escort"></i>
+  </div>
+  <h4 class="service-card__title title">ОКАЗЫВАЕМ ЭКСПЕРТНОЕ А&#160;ТАКЖЕ ЮРИДИЧЕСКОЕ СОПРОВОЖДЕНИЕ</h4>
+  <ul class="service-card__services-list">
+
+        <li class="service-card__service-item">
+      <span>Финансовые вопросы (открытие счета, перевод средств, обмен валют и&#160;т.&#160;д.)</span>
+    </li>
+
+        <li class="service-card__service-item">
+      <span>Оформление ипотеки</span>
+    </li>
+
+        <li class="service-card__service-item">
+      <span>Подготовка договоров</span>
+    </li>
+
+        <li class="service-card__service-item">
+      <span>Сопровождение сделки</span>
+    </li>
+
+        <li class="service-card__service-item">
+      <span>Страхование недвижимости</span>
+    </li>
+
+        <li class="service-card__service-item">
+      <span>Трансфер</span>
+    </li>
+
+      </ul>
+</article>
+
+      </li>
+      <li class="services__card-item">
+        <article class="service-card">
+  <div class="service-card__top">
+    <div class="service-card__serial-number">04</div>
+    <i class="service-card__icon-wrapper after-sale"></i>
+  </div>
+  <h4 class="service-card__title title">ПОМОГАЕМ ПОСЛЕ ПРОДАЖИ</h4>
+  <ul class="service-card__services-list">
+
+        <li class="service-card__service-item">
+      <span>Активация коммунальных услуг</span>
+    </li>
+
+        <li class="service-card__service-item">
+      <span>Резидентская визовая поддержка</span>
+    </li>
+
+        <li class="service-card__service-item">
+      <span>Квалифицированная помощь в&#160;функционировании бизнеса</span>
+    </li>
+
+      </ul>
+</article>
+
+      </li>
+      <li class="services__card-item">
+        <article class="service-card">
+  <div class="service-card__top">
+    <div class="service-card__serial-number">05</div>
+    <i class="service-card__icon-wrapper manage"></i>
+  </div>
+  <h4 class="service-card__title title">ПОМОГАЕМ УПРАВЛЯТЬ</h4>
+  <ul class="service-card__services-list">
+
+        <li class="service-card__service-item">
+      <span>Внутреннее управление</span>
+    </li>
+
+        <li class="service-card__service-item">
+      <span>Гостиничный сервис</span>
+    </li>
+
+        <li class="service-card__service-item">
+      <span>Краткосрочная или долгосрочная аренда</span>
+    </li>
+
+      </ul>
+</article>
+
+      </li>
+      <li class="services__card-item">
+        <article class="service-card-feedback">
+  <div
+    class="service-card-feedback__content"
+    data-modal-open="id-modal-callback"
+  >
+    <i class="service-card-feedback__icon"></i>
+
+    <div class="service-card-feedback__text">
+      Получить консультацию специалиста
+    </div>
+  </div>
+
+  <div class="service-card-feedback__trigger"></div>
+</article>
+
+      </li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+    <div class="stripes-decor container">
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
+
+    <button class="btn-callback">
+  <i class="btn-callback__icon" data-modal-open="id-modal-callback"></i>
+</button>
+
+    <div class="modal modal-slide" id="id-modal-callback" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-modal-close>
+    <div
+      class="modal__container"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-1-title"
+    >
+      <button class="btn modal__close" data-modal-close></button>
+
+            <div class="modal-callback">
+  <header class="modal-callback__header">
+    <h3 class="modal-callback__title title">Оставьте заявку</h3>
+  </header>
+  <form class="modal-callback__form form-callback">
+    <fieldset class="form-callback__fields">
+      <div class="form-callback__field">
+        <input
+          class="form-callback__input"
+          type="text"
+          name="ccname"
+          placeholder="Ваше имя"
+          aria-label="укажите ваше имя"
+        />
+      </div>
+
+      <div class="form-callback__field">
+        <input
+          class="form-callback__input"
+          type="tel"
+          name="cctelephone"
+          placeholder="Телефон"
+          aria-label="введите телефон"
+        />
+      </div>
+
+      <div class="form-callback__field">
+        <input
+          class="form-callback__input"
+          type="email"
+          name="ccemail"
+          placeholder="Email"
+          aria-label="введите адрес электронной почты"
+        />
+      </div>
+    </fieldset>
+
+    <button class="form-callback__submit btn">
+      <span>ОТПРАВИТЬ</span>
+    </button>
+  </form>
+</div>
+
+     </div>
+  </div>
+</div>
+
+    <script src="./scripts/scripts.min.js"></script>
+
+  </body>
+</html>
