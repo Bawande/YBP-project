@@ -17,6 +17,8 @@
     align-items: center;
     margin-right: 46px;
 
+
+
     &:last-child {
       margin-right: 0;
     }
@@ -28,6 +30,8 @@
     height: 62px;
 
     margin-right: 20px;
+
+    transition: filter 0.3s ease;
 
     // background-image: url("../images/icon-sprite__advantages.png");
     @include bg-webp("../images/icon-sprite__advantages");

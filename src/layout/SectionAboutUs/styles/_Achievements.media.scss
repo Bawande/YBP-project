@@ -1,3 +1,12 @@
+// for desktop hover effect
+@media (hover: hover) and (pointer: fine) {
+  .achievements {
+    &__card-wrapper:hover &__icon {
+      transform: scale(1.05);
+    }
+  }
+}
+
 @media (max-width: 1600px) {
   .achievements {
 

@@ -1,3 +1,14 @@
+// for desktop hover effect
+@media (hover: hover) and (pointer: fine) {
+  .advantages {
+    &__item:hover &__icon {
+      filter: $hover-shadow;
+    }
+
+  }
+}
+
+
 @media (max-width: 1600px) {
   .advantages {
     padding: 36px 50px;

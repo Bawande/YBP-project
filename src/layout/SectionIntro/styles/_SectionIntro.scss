@@ -41,12 +41,25 @@
     width: 2074px;
     height: 1046px;
 
-    // background-image: url("../images/img-intro__background.jpg");
-    @include bg-webp("../images/img-intro__background", ".jpg");
+    &>i {
+      display: block;
+      width: 100%;
+      height: 100%;
 
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;
+      background-color: transparent;
+
+      // background-image: url("../images/img-intro__background.jpg");
+      @include bg-webp("../images/img-intro__background", ".jpg");
+
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: cover;
+    }
+
+    // for desktop hover effect
+    @media (hover: hover) and (pointer: fine) {
+      animation: animate-bg-intro 10s infinite;
+    }
   }
 
   &__content {
@@ -80,18 +93,15 @@
     margin-bottom: 54px;
 
     &>.btn::after {
-      z-index: 10;
 
       position: absolute;
       top: -112px;
       right: -60px;
+      z-index: 10;
 
       display: block;
       width: 162px;
       height: 163px;
-
-      // background-image: url("../images/img-intro__btn-palm.png");
-      @include bg-webp("../images/img-intro__btn-palm");
 
       background-repeat: no-repeat;
       background-position: 0 0;
@@ -100,6 +110,9 @@
       content: "";
 
       pointer-events: none;
+
+      // background-image: url("../images/img-intro__btn-palm.png");
+      @include bg-webp("../images/img-intro__btn-palm");
     }
   }
 
@@ -181,14 +194,22 @@
     width: 1221px;
     height: 891px;
 
-    // background-image: url("../images/img-intro__front-people.webp");
-    @include bg-webp("../images/img-intro__front-people");
-
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;
-
     pointer-events: none;
+
+    &>i {
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      background-color: transparent;
+
+      // background-image: url("../images/img-intro__front-people.webp");
+      @include bg-webp("../images/img-intro__front-people");
+
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: cover;
+    }
   }
 
   &__scene-front-gold {
@@ -200,15 +221,33 @@
     width: 2013px;
     height: 598px;
 
-    // background-image: url("../images/img-intro__front-gold.webp");
-    @include bg-webp("../images/img-intro__front-gold");
+    &>i {
 
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      // background-image: url("../images/img-intro__front-gold.webp");
+      @include bg-webp("../images/img-intro__front-gold");
+
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: cover;
+    }
 
     mix-blend-mode: color-dodge;
 
     pointer-events: none;
+  }
+}
+
+@keyframes animate-bg-intro {
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+
+    transform: scale(1);
   }
 }

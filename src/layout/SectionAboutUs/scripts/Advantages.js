@@ -11,13 +11,14 @@ const swiperOptions = {
   centeredSlides: true,
   updateOnWindowResize: true,
   spaceBetween: 0,
+  speed: 1000,
 
   loop: true,
 
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
 };
 
 let advantagesSwiper = null;
