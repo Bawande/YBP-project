@@ -14,11 +14,13 @@
       <i></i>
     </div>
 
-    <button class="btn-callback">
-      <i class="btn-callback__icon"></i>
-    </button>
+    @@include('src\components\BtnCallback\BtnCallback.html')
+    <!--  -->
+    @@include('src\components\Modal\Modal.html', { "name": "callback", "id":
+    "id-modal-callback" })
+
     <!-- <script> -->
-    @@include('src/parts/scripts.html')
+    @@include('src\parts\scripts.html')
     <!-- </script> -->
   </body>
 </html>

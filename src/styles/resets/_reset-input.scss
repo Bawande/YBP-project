@@ -1,0 +1,112 @@
+label {
+  display: inline-block;
+
+  text-transform: none;
+}
+
+legend,
+fieldset,
+select,
+textarea,
+input,
+button {
+  appearance: none;
+}
+
+input:not([type]),
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="text"],
+input[type="file"],
+input[type="url"],
+select,
+textarea {
+  display: block;
+  width: 100%;
+
+  outline: none;
+
+  border: none;
+  background-image: none;
+  background-color: transparent;
+
+  /* stylelint-disable-line */
+  -webkit-box-shadow: none;
+
+  /* stylelint-disable-line */
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+textarea {
+  overflow-x: hidden;
+
+  vertical-align: top;
+
+  resize: vertical;
+}
+
+textarea:not([rows]) {
+  height: 7rem;
+  min-height: 5rem;
+  max-height: 15rem;
+}
+
+// === удаление желтого фона при автозаполнении полей ===
+input:-webkit-autofill {
+  /* stylelint-disable-line */
+  border-color: rgb(117 117 76) !important;
+  box-shadow: 0 0 0 100px #feffef inset !important;
+}
+
+// === удаление иконки очистки поля в IE ===
+input[type="text"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+// === удаление иконки отображения пароля в IE ===
+input[type="text"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+// === удаление иконок у input serch ===
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+// === удаление кнопок у input number ===
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+  margin: 0;
+
+  appearance: none;
+}
+
+input[type="number"] {
+  /* stylelint-disable-line */
+  -moz-appearance: textfield;
+
+  /* Firefox */
+}
+
+@media (hover: hover) and (pointer: fine),
+screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  input:focus::placeholder {
+    color: transparent !important;
+  }
+}

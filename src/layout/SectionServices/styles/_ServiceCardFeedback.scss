@@ -1,4 +1,5 @@
 .service-card-feedback {
+  position: relative;
 
   display: flex;
   align-items: flex-end;
@@ -8,6 +9,7 @@
   padding: 30px 45px 50px 50px;
 
   background-image: linear-gradient(63.57deg, #d59647 13.01%, #dba868 29.2%, #f0e088 43.69%, #daa35f 52.22%, #d59647 59.04%, #efe188 78.65%, #d59647 98.25%);
+  cursor: pointer;
 
   @media (max-width: 1280px) {
     min-height: 380px;
@@ -21,6 +23,20 @@
 
   &__content {
     width: 100%;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      display: block;
+
+      background: transparent;
+
+      content: "";
+    }
   }
 
   &__icon {

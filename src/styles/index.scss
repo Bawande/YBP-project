@@ -1,6 +1,7 @@
 // --- resets
 @import "./resets/reset";
 @import "./resets/reset-action";
+@import "./resets/reset-input";
 
 // --- libs
 @import "../../node_modules/swiper/swiper";
@@ -11,11 +12,16 @@
 // --- common
 @import "./common/variables";
 @import "./common/fonts";
+@import "./common/animate";
 
 // --- UI
 @import "./UI/container";
 @import "./UI/btn";
 @import "./UI/title";
+
+// --- componets
+@import "../components/Modal/styles";
+@import "../components/BtnCallback/styles";
 
 // --- body
 body {
@@ -29,7 +35,7 @@ body {
   font-size: 16px;
 
   font-family:
-    Montserrat,
+    MontserratYBP,
     "Segoe UI",
     Roboto,
     Oxygen,
@@ -58,7 +64,7 @@ body {
   bottom: 0;
   left: 50%;
 
-  z-index: 30;
+  z-index: 10;
 
   display: flex;
   justify-content: space-between;
@@ -97,50 +103,6 @@ body {
   @media (max-width: 534px) {
     &>i:nth-child(2) {
       display: none;
-    }
-  }
-}
-
-.btn-callback {
-  position: fixed;
-  right: 60px;
-
-  bottom: 60px;
-  z-index: 1000;
-
-  display: none;
-
-  &__icon {
-    display: block;
-    width: 60px;
-    height: 60px;
-
-    background-image: url("../images/icon__btn-callbak.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: contain;
-
-    border-radius: 50px;
-
-    box-shadow: 0 5px 10px rgb(0 0 0 / 25%);
-  }
-
-  @media (max-width: 768px) {
-    display: block;
-  }
-
-  @media (max-width: 534px) {
-    right: 30px;
-    bottom: 30px;
-  }
-
-  @media (max-width: 534px) {
-    right: 20px;
-    bottom: 10px;
-
-    &__icon {
-      width: 50px;
-      height: 50px;
     }
   }
 }

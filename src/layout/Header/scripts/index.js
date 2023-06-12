@@ -1,1 +1,3 @@
-import './TemplateName';
+import './Header';
+import './MenuTablet';
+import './MenuMobile';
