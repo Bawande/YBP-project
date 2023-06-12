@@ -2,7 +2,7 @@
   "name": "project_ybp",
   "version": "1.0.0",
   "description": "Gulp start project",
-  "homepage": "",
+  "homepage": "https://Bawande.github.io/YBP-project-test",
   "scripts": {
     "dev": "gulp watch",
     "build:dev": "gulp build",
